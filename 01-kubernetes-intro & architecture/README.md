@@ -50,7 +50,7 @@ Controllers include node controllers, replication controllers, endpoints control
 
 ![Kubernetes Diagrame](../pictures/controller2.PNG)
 
-## 4.Scheduler (kube-scheduler):
+## 4-Scheduler (kube-scheduler):
 
 The scheduler assigns work to the worker nodes. It watches for newly created pods that have no assigned node and selects a suitable node for them to run on.
 
