@@ -34,6 +34,8 @@ The API server is the front-end for the Kubernetes control plane. It exposes the
 
 All interactions with the cluster, whether from the CLI, UI, or other tools, go through the API server.
 
+![Kubernetes Diagrame](../pictures/kubeapi-server.PNG)
+
 ## 2- etcd
 
 etcd is a consistent and highly-available key-value store used as Kubernetes’ backing store for all cluster data.
