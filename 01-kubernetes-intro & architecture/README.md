@@ -34,6 +34,8 @@ The API server is the front-end for the Kubernetes control plane. It exposes the
 
 All interactions with the cluster, whether from the CLI, UI, or other tools, go through the API server.
 
+![Kubernetes Diagrame](../pictures/kubeapi-server.PNG)
+
 ## 2- etcd
 
 etcd is a consistent and highly-available key-value store used as Kubernetes’ backing store for all cluster data.
@@ -44,9 +46,11 @@ It stores configuration data that can be accessed by all nodes in the cluster, e
 
 The controller manager runs controller processes to regulate the state of the cluster.
 
-Controllers include node controllers, replication controllers, endpoints controllers, and others, which monitor the state of the cluster through the API server and make changes to ensure the desired state is maintained.
+Controllers include node controllers, replication controllers, endpoints controllers, and others, which monitor the state of the cluster through the API server and make changes to ensure the desired state is maintained.![Kubernetes Diagrame](../pictures/controller.PNG)
 
-## 4.Scheduler (kube-scheduler):
+![Kubernetes Diagrame](../pictures/controller2.PNG)
+
+## 4-Scheduler (kube-scheduler):
 
 The scheduler assigns work to the worker nodes. It watches for newly created pods that have no assigned node and selects a suitable node for them to run on.
 
