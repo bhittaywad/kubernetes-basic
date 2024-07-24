@@ -3,8 +3,8 @@ A Pod is the smallest and simplest unit in the Kubernetes object model that you 
 
 ## Single or Multiple Containers:
 
- 1-Single Container Pod: The most common use case, where each Pod runs a single container.
-             2-Multi-Container Pod: Contains multiple containers that need to work closely together. These containers share the same network namespace, meaning they can communicate with each other using localhost
+ ### 1-Single Container Pod: The most common use case, where each Pod runs a single container.
+ ### 2-Multi-Container Pod: Contains multiple containers that need to work closely together. These containers share the same network namespace, meaning they can communicate with each other using localhost
 ### 3-Shared Resources:
 
 Network: All containers within a pod share the same IP address and port space. They can communicate with each other using localhost.
