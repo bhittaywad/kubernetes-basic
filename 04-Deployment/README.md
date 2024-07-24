@@ -19,6 +19,6 @@ Deployments enable easy scaling of applications by adjusting the number of repli
 
 Deployments automatically replace failed or terminated pods, ensuring that the desired number of replicas is always running.
 
-Multiple Strategies:
+ ### Multiple Strategies:
 
 Deployments support different update strategies, such as rolling updates and recreate strategies, allowing you to choose the best approach for your application.
