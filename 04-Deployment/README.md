@@ -22,3 +22,23 @@ Deployments automatically replace failed or terminated pods, ensuring that the d
  ### Multiple Strategies:
 
 Deployments support different update strategies, such as rolling updates and recreate strategies, allowing you to choose the best approach for your application.
+# Deployment Strategies?
+
+1-Rolling update
+
+2-recreate
+
+3-canery deployment
+
+# Rolling Update:
+
+Gradually replaces old pods with new ones. This is the default strategy and minimizes downtime.
+
+# Recreate:
+
+Terminates all existing pods before creating new ones. This strategy can cause downtime but ensures that no old pods are running
+
+# canary deployment:
+
+A canary deployment is a deployment strategy that releases a new version of an application to a small subset of users before rolling it out to the entire infrastructure. This approach allows developers to test new features in a production environment and monitor their performance and impact on a limited scale, reducing the risk of widespread issue.
+
