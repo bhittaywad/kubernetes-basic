@@ -46,7 +46,9 @@ It stores configuration data that can be accessed by all nodes in the cluster, e
 
 The controller manager runs controller processes to regulate the state of the cluster.
 
-Controllers include node controllers, replication controllers, endpoints controllers, and others, which monitor the state of the cluster through the API server and make changes to ensure the desired state is maintained.
+Controllers include node controllers, replication controllers, endpoints controllers, and others, which monitor the state of the cluster through the API server and make changes to ensure the desired state is maintained.![Kubernetes Diagrame](../pictures/controller.PNG)
+
+![Kubernetes Diagrame](../pictures/controller2.PNG)
 
 ## 4.Scheduler (kube-scheduler):
 
