@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jawad-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: jawad-app
+  template:
+    metadata:
+      labels:
+        app: jawad-app
+    spec:
+      containers:
+      - name: example-container
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
