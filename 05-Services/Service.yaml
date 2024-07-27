@@ -1,3 +1,5 @@
+#########################################
+######### Cluster Ip ##############
 apiVersion: v1
 kind: Service
 metadata:
@@ -10,6 +12,7 @@ spec:
     - protocol: TCP
       port: 80
       targetPort: 9376
-
+#########################################
+######### NodePort ##############
 
                  

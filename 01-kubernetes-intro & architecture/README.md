@@ -46,9 +46,10 @@ It stores configuration data that can be accessed by all nodes in the cluster, e
 
 The controller manager runs controller processes to regulate the state of the cluster.
 
-Controllers include node controllers, replication controllers, endpoints controllers, and others, which monitor the state of the cluster through the API server and make changes to ensure the desired state is maintained.![Kubernetes Diagrame](../pictures/controller.PNG)
+Controllers include node controllers, replication controllers, endpoints controllers, and others, which monitor the state of the cluster through the API server and make changes to ensure the desired state is maintained.
+![Node_Controller Diagrame](../pictures/controller.PNG)
 
-![Kubernetes Diagrame](../pictures/controller2.PNG)
+![Pod_controller Diagrame](../pictures/contoller2.PNG)
 
 ## 4-Scheduler (kube-scheduler):
 
@@ -63,12 +64,14 @@ The decision is based on factors such as resource availability, affinity/anti-af
 The kubelet is an agent that runs on each worker node in the cluster. It ensures that containers are running in a pod.
 
 The kubelet communicates with the API server to get instructions and reports back on the status of the node and the pods running on it.
+![Kubernetes Diagrame](../pictures/kubelet.PNG)
 
 ## Kube-proxy:
 
 Kube-proxy maintains network rules on each node. It allows network communication to your pods from network sessions inside or outside of the cluster.
 
 It can perform simple TCP/UDP stream forwarding or round-robin TCP/UDP forwarding across backend services.
+![Kubernetes Diagrame](../pictures/kube-proxy.PNG)
 
 ## Container Runtime:
 
