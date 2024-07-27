@@ -1,0 +1,16 @@
+
+##Example of a PersistentVolumeClaim (PVC) using a StorageClass
+##To request storage using the defined StorageClass, you create a PersistentVolumeClaim:
+
+
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: my-pvc
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
+  storageClassName: my-storage-class

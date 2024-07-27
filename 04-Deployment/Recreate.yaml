@@ -1,0 +1,28 @@
+######## Recreate ###############
+ #A "Recreate" update strategy in Kubernetes involves terminating all existing pods before creating new ones. This approach can lead to downtime because the new pods are not created until the old ones are completely terminated.
+
+#Here's an example of a Deployment YAML file configured with a "Recreate" update strategy:
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-deployment
+  labels:
+    app: my-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+      - name: my-container
+        image: nginx:1.14.2  # Initial version of the image
+        ports:
+        - containerPort: 80
+  strategy:
+    type: Recreate
