@@ -27,15 +27,6 @@ spec:
           name: my-secret
           key: password
 
-# Mounting a ConfigMap as a Volume
-apiVersion: v1
-kind: Pod
-metadata:
-  name: my-pod
-spec:
-  containers:
-  - name: my-container
-    image: nginx
     volumeMounts:
     - name: config-volume
       mountPath: /etc/config
