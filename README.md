@@ -11,7 +11,7 @@ This repository serves as a guide for learning Kubernetes, a powerful open-sourc
 - [replica-set](https://github.com/bhittaywad/kubernetes-basic/tree/main/03-Replicaset)
 - [Deployment](https://github.com/bhittaywad/kubernetes-basic/tree/main/04-Deployment)
 - [deployment startigies](https://github.com/bhittaywad/kubernetes-basic/blob/main/04-Deployment/README.md)
-- Service
+- [Service](https://github.com/bhittaywad/kubernetes-basic/tree/main/05-Services)
 - service type
 - Namespace
 - kubernetes volume
