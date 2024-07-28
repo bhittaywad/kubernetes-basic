@@ -5,7 +5,7 @@ This repository serves as a guide for learning Kubernetes, a powerful open-sourc
 
 ## Table of Contents
 
-- Introduction to Kubernetes
+- [Introduction to Kubernetes](https://github.com/bhittaywad/kubernetes-basic/tree/main/01-kubernetes-intro%20%26%20architecture)
 - What is pod
 - Kubernetes component
 - replica-set
