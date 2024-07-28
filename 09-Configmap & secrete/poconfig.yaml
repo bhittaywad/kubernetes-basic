@@ -1,4 +1,15 @@
 
+############## Config Map ################################
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: webapp-config-map
+data:
+  # property-like keys; each key maps to a simple value
+  APP_COLOR: darkblue
+  APP_OTHER: disregard
+
+
 ##Update the Pod spec to use the configMap as below:
 ##Inject with pod
 
