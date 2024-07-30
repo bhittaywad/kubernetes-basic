@@ -13,7 +13,7 @@ This repository serves as a guide for learning Kubernetes, a powerful open-sourc
 - [deployment startigies](https://github.com/bhittaywad/kubernetes-basic/blob/main/04-Deployment/README.md)
 - [Service](https://github.com/bhittaywad/kubernetes-basic/tree/main/05-Services)
 - service type
-[ingress](https://github.com/bhittaywad/kubernetes-basic/tree/main/06-Ingress)
+- [ingress](https://github.com/bhittaywad/kubernetes-basic/tree/main/06-Ingress)
 
 - [Namespace](https://github.com/bhittaywad/kubernetes-basic/tree/main/07-Namespace)
 - [kubernetes volume](https://github.com/bhittaywad/kubernetes-basic/tree/main/08-Volume)
