@@ -1,0 +1,12 @@
+##Example of applying labels to a pod
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-pod
+  labels:
+    app: nginx
+    env: production
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.14.2

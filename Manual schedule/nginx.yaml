@@ -1,0 +1,12 @@
+##Add the nodeName field under the spec section in the nginx.yaml file with node01 as the value:
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  nodeName: node01
+  containers:
+  -  image: nginx
+     name: nginx

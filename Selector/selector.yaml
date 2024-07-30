@@ -1,0 +1,13 @@
+##Example of using a selector in a service:
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: nginx
+    env: production
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
