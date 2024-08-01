@@ -2,7 +2,7 @@
 A ReplicaSet is a Kubernetes resource that ensures a specified number of pod replicas are running at any given time. It helps maintain the desired state of your application by creating or deleting pods as needed to match the defined number of replicas. ReplicaSets are essential for ensuring high availability and scalability of applications.
 # benefit of replica-set
 1- Number of Label select
-2-value of replica-set at any time running pod
+2-Replica-set number of pod are running atany given time
 ### Ensuring Availability
 Automatic Scaling: ReplicaSets ensure that a specified number of pod replicas are always running. If a pod fails or is terminated, the ReplicaSet controller automatically creates a new pod to maintain the desired state.
 Fault Tolerance: By distributing pod replicas across different nodes, ReplicaSets increase the resilience of applications to node failures.
