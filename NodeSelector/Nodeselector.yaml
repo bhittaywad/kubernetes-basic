@@ -1,0 +1,11 @@
+##To ensure that a pod is only scheduled on nodes with SSDs, you can use the following pod specification:
+apiVersion: v1
+kind: Pod
+metadata:
+  name: node-selector
+spec:
+  containers:
+  - name: nodeSelector
+    image: nginx
+  nodeSelector:
+    disktype: ssd
